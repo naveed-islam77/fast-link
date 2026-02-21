@@ -1,7 +1,7 @@
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import React from "react";
+import React, { Suspense } from "react";
 import "./globals.css";
 import { ReduxProvider } from "./providers";
 import { Toaster } from "sonner";
@@ -51,7 +51,9 @@ export default function RootLayout({
       <body className={`font-sans antialiased`}>
         <ReduxProvider>
           <Toaster richColors />
-          <RouteProgress />
+          <Suspense>
+            <RouteProgress />
+          </Suspense>
           {children}
         </ReduxProvider>
         <Analytics />
