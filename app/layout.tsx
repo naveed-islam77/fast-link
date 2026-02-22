@@ -15,7 +15,6 @@ export const metadata: Metadata = {
   title: "FastLink - Premium Mobile Devices & Tablets",
   description:
     "Discover the latest FastLink smartphones, tablets, and accessories. Premium quality, innovative technology, and exceptional value.",
-  generator: "v0.app",
   viewport: {
     width: "device-width",
     initialScale: 1,
@@ -25,19 +24,10 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        url: "/icon.png",
+        type: "image/png",
       },
     ],
-    apple: "/apple-icon.png",
   },
 };
 

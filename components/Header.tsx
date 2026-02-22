@@ -15,7 +15,7 @@ export function Header() {
             alt="FastLink"
             width={50}
             height={50}
-            className="w-28 h-auto"
+            className="w-20 md:w-28 h-auto"
           />
           <span className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
             FastLink

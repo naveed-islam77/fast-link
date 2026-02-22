@@ -14,7 +14,7 @@ export function FilterSidebar({ categories }: FilterSidebarProps) {
   const activeCategory = searchParams.get("category");
 
   return (
-    <aside className="bg-card rounded-lg border border-border p-6 h-fit sticky top-20">
+    <aside className="bg-card rounded-lg border border-border p-6 h-fit md:sticky top-20">
       <h3 className="font-bold text-lg text-foreground mb-4">Categories</h3>
       <nav className="space-y-2">
         <Link href="/products" scroll={false}>
